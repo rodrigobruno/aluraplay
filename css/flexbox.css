@@ -6,6 +6,18 @@
     top: 0;
 }
 
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+.superior__secao__container {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
 .rodape__container {
     display: flex;
     flex-flow: column wrap;
@@ -16,4 +28,7 @@
         display: block;
     }
 
+    .rodape__container {
+        justify-content: space-between;
+    }
 }
