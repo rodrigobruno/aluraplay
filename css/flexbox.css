@@ -1,0 +1,19 @@
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.rodape__container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+@media (min-width: 834px) {
+    .cabecalho__pesquisar__item {
+        display: block;
+    }
+
+}
