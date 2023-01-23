@@ -31,7 +31,7 @@
     align-self: center;
 }
 
-.menu__lista li a {
+.menu__itens {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -56,20 +56,64 @@
     }
 
     .menu__container {
-        top: 80px;
         left: 0;
+        height: auto;
         width: 74px;
-        height: calc(100% - 80px);
+        top: 80px;
     }
 
     .menu__lista {
         flex-direction: column;
-        justify-content: start;
-        gap: 20px;
-
+        justify-content: flex-start;
+        padding-top: 15px;
+        gap: 33px;
     }
 
     .rodape__container {
         justify-content: space-between;
     }
+}
+
+@media (min-width: 1440px) {
+    .menu__container {
+        width: 239px;
+        overflow-x: scroll;
+    }
+
+    .menu__lista:not(:nth-child(1)) {
+        display: flex;
+    }
+
+    .menu__lista {
+        height: auto;
+        padding: 20px 17px 20px 15px;
+        gap: 15px;
+    }
+
+    .menu__lista:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+
+    .menu__itens {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .jogos {
+        order: 3;
+    }
+
+    .filmes {
+        order: 2;
+    }
+
+    .premium {
+        order: 1;
+    }
+
+    .maispagina {
+        order: 4;
+    }
+
 }
